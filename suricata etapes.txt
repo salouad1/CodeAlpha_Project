@@ -8,7 +8,7 @@ Hello,this text shows you how to use suricata in order todetect network intrusio
 -CHECK YOUR SURICATA'S VERSION:
    suricata --version
 
--:
+-BUILD INFO:
 suricata --build-info;
 
 -CONFIGURE SURICATA:
@@ -29,7 +29,7 @@ suricata --build-info;
 -EVE JSON LOG:
   sudo tail -f /var/log/suricata/eve.json;
 
--:
+-CHECK THE DIRECTORY PERMISSIONS:
   sudo ls -ld /var/log/suricat;
 
 -LOG PRINCIPAL:
