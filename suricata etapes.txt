@@ -1,3 +1,4 @@
+Hello,this text shows you how to use suricata in order todetect network intrusions
 -INSTALL SURICATA:
    sudo apt-get install suricata ;
 
