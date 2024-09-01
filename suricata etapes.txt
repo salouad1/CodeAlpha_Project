@@ -1,0 +1,36 @@
+-INSTALL SURICATA:
+   sudo apt-get install suricata ;
+
+-UPDATE SURICATA'S RULES:
+   sudo suricata-update;
+
+-CHECK YOUR SURICATA'S VERSION:
+   suricata --version
+
+-:
+suricata --build-info;
+
+-CONFIGURE SURICATA:
+   sudo nano /etc/suricata/suricata.yaml;  "Use this command to open the Suricata configuration file in the nano text editor"
+
+-RUNNNIG SURICATA IN LIVE MODE:
+   sudo suricata -c /etc/suricata/suricata.yaml -i eth0;  "This starts Suricata in live mode, monitoring the eth0 interface using the specified configuration file'
+
+-START SURICATA AS A DAEMON:
+  sudo systemctl start suricata;
+
+-SURICATA STATUS:
+  sudo systemctl status suricata;
+
+-VIEW SURICATA LOGS:
+  sudo tail -f /var/log/suricata/suricata.log;
+
+-EVE JSON LOG:
+  sudo tail -f /var/log/suricata/eve.json;
+
+-:
+  sudo ls -ld /var/log/suricat;
+
+-LOG PRINCIPAL:
+
+ sudo tail -f /var/log/suricata/suricata.log;
